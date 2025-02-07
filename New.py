@@ -6,11 +6,11 @@ import folium
 from streamlit_folium import st_folium
 
 # Load Data
-csv_file_path = r"G:\Naduni\Streamlit dash\us-population-2010-2019-states-code.csv"
+csv_file_path = r"https://github.com/Nadunimithya/StreamlitApp/blob/main/us-population-2010-2019-states-code.csv"
 data = pd.read_csv(csv_file_path)
 
 # Load Shapefile Data
-shapefile_path = r"G:\Naduni\Streamlit dash\USA.shp"
+shapefile_path = r"https://github.com/Nadunimithya/StreamlitApp/blob/main/USA_names.shp"
 gdf = gpd.read_file(shapefile_path)
 
 # Convert columns to strings for consistent handling
